@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Nikita Shumakov](https://up.htmlacademy.ru/htmlcss/17/user/305185).
-* Наставник: `Неизвестно`.
+* Наставник: [Denis Vlasov](https://up.htmlacademy.ru/htmlcss/16/user/18034)
 
 ---
 
