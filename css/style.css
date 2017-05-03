@@ -3,6 +3,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  color: white;
   font-family: "Roboto", "Arial", sans-serif;
   background: #849d8f;
 }
@@ -32,14 +33,14 @@ body {
 }
 
 .container {
-  width: 1150px;
+  width: 1146px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 27px;
 }
 
 .main-header {
   min-height: 606px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .main-header-layout {
@@ -52,13 +53,27 @@ body {
 
 
 .main-navigation {
-  width: 360px;
   min-height: 75px;
+}
+
+.main-navigation ul {
+  padding: 0;
+  margin-left: 23px;
+  font-size: 0px;
 }
 
 .main-navigation li {
   display: inline-block;
-  
+  margin-top: 30px;
+  margin-right: 29px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: white;
 }
 
 .user-block {
@@ -66,10 +81,14 @@ body {
   margin-left: auto;
 }
 
+.slider {
+  min-height: 606px;
+}
+
 .special-offer {
   display: flex;
   justify-content: space-between;
-  min-height: 230px;
+  min-height: 229px;
   margin-bottom: 40px;
 }
 
@@ -77,14 +96,46 @@ body {
   width: 560px;
 }
 
+.special-offer-left {
+  background-image: url("../img/raspberry-bg.png");
+}
+
+.special-offer-right {
+  background-image: url("../img/chocolate-bg.png");
+}
+
 .most-popular {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
+  min-height: 325px;
 }
 
 .gallery-card {
   width: 267px;
+}
+
+.price {
+  position: absolute;
+  bottom: 80px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.product-name {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.kg {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
 }
 
 .features {
@@ -93,6 +144,16 @@ body {
   flex-wrap: wrap;
   min-height: 305px;
   margin-bottom: 40px;
+  background-image: url(../img/waffle-bg.png)
+}
+
+.features h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #323232;
+  padding-left: 20px;
+  margin-bottom: 0px;
 }
 
 .features p {
@@ -122,13 +183,12 @@ body {
 
 .news-left {
   width: 560px;
+  background-image: url(../img/strawberry-bg.png)
 }
 
 .news-right {
   width: 560px;
 }
-
-/* КАТАЛОГ */
 
 .gallery {
   display: flex;
@@ -148,26 +208,52 @@ body {
   position: relative;
   vertical-align: middle;
   left: 50%;
-  margin-left: -720px;
+  margin-left: -600px;
 }
 
 .contacts {
   position: absolute;
   top: 55px;
   left: 50%;
-  width: 269px;
-  min-height: 308px;
+  width: 300px;
+  min-height: 305px;
   background-color: #ffffff;
   text-align: left;
-  padding-left: 50px;
-  margin-left: 250px;
+  margin-left: 272px;
 }
 
 .main-footer-layout {
   display: flex;
-  justify-content: space-between;
 }
 
+.footer-social {
+  margin-right: 105px;
+}
+
+.footer-menu {
+  width: 330px;
+}
+
+.footer-menu ul {
+  padding-left: 21px;
+}
+
+.footer-menu li {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.copyright {
+  margin-left: auto;
+}
+
+/* КАТАЛОГ */
+
+.basket-inside {
+  display: none;
+}
 
 div, article, header, footer, section, a, p, span {
 outline: 1px solid red;
