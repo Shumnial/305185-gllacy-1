@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="main-header-layout container">
         <a><img class="logo" src="img/gllacy-logo.png" alt="Логотип Глейси" width="154" height="64"></a>
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Каталог</a>
-              <ul>
+              <ul class="submenu">
                 <li><a href="#">Новинки</a></li>
                 <li><a href="#">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
@@ -29,7 +32,7 @@
             <input class="search" type="search" name="search" value="Что ищем?">
           </form>
           <a class="login" href="#">Вход</a>
-          <form action="#" method="get">
+          <form class="login-form" action="#" method="get">
             <input class="email" type="text" name="email" value="Электронная почта">
             <input class="password" type="text" name="password" value="Пароль">
             <button class="btn">Войти</button>
@@ -45,12 +48,9 @@
         <div class="slider">
           <div class="slider-controls"></div>
           <div class="slides">
-            
             <div class="slide">
               <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
-              <a class="btn" href="#">Давайте оба!</a>
-            </div>
-            
+              <a class="btn" href="#">Давайте оба!</a></div>
             <div class="slide">
               <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
               <a class="btn" href="#">Давайте оба!</a>
@@ -77,36 +77,39 @@
         </div>
       </section>
       <section class="most-popular">
-         <img src="img/product-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+        <article class="gallery-card">
+          <img src="img/product-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
           <span>310 ₽ /кг</span>
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
         </article>
-        <article class="galery-card">
+        <article class="gallery-card">
           <img src="img/product-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267" width="267" height="267">
           <span>380 ₽ /кг</span>
           <p>Сливочно-кофейное с кусочками шоколада</p>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
         </article>
         <article class="gallery-card">
           <img src="img/product-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
           <span>355 ₽ /кг</span>
           <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
         </article>
         <article class="gallery-card">
           <img src="img/product-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
           <span>415 ₽ /кг</span>
           <p>Сливочное крем-брюле с карамельной подливкой</p>
-          <a class="btn" href="#">Быстрый просмотр</a>
+          <a class="btn quick-view" href="#">Быстрый просмотр</a>
         </article>
       </section>
       <section class="features">
         <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
-        <p class="features-icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем тенхологий.</p>
-        <p class="features-cow">Закупка игредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        <p class="features-leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        <p class="features-termometr">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        
+          <p class="features-icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем тенхологий.</p>
+          <p class="features-cow">Закупка игредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <p class="features-leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          <p class="features-termometr">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        
       </section>
       <section class="news">
         <div class="news-left">
@@ -123,6 +126,7 @@
       </section>
     </main>
     <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461636648!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1487736581834" width="1440" height="417" style="border:0" allowfullscreen></iframe>
       <div class="contacts">
         <p>Адрес главного офиса и офлайн магазина:</p>
         <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -133,23 +137,25 @@
       </div>
     </div>
     <footer class="main-footer">
-      <div class="footer-social">
-        <a class="social-btn social-btn-twitter" href="#">Твиттер</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-      </div>
-      <div class="footer-menu">
-        <ul>
-          <li><a href="#">Для поставщиков</a></li>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
-        </ul>
-      </div>
-      <div class="copyright">
-        <a><img src="#" alt="Логотип HTML Academy"></a>
-        <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
+      <div class="main-footer-layout container">
+        <div class="footer-social">
+          <a class="social-btn social-btn-twitter" href="#">Твиттер</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        </div>
+        <div class="footer-menu">
+          <ul>
+            <li><a href="#">Для поставщиков</a></li>
+            <li><a href="#">Наши документы</a></li>
+            <li><a href="#">О производстве</a></li>
+            <li><a href="#">Экологические стандарты</a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <a><img src="#" alt="Логотип HTML Academy"></a>
+          <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
+        </div>
       </div>
     </footer>
     <div class="modal-content">
