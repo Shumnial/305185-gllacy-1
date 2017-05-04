@@ -33,7 +33,7 @@ body {
 }
 
 .slider {
-  display: none;
+  
 }
 
 .quick-view {
@@ -51,12 +51,16 @@ body {
 }
 
 .main-header {
-  min-height: 606px;
   margin-bottom: 41px;
 }
 
 .main-header-layout {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.main-header-layout > a {
+  height: 74px;
 }
 
 .logo {
@@ -131,6 +135,12 @@ body {
   color: white;
   text-decoration: none;
   margin-top: 10px;
+}
+
+.slider {
+  min-height: 489px;
+  width: 100%;
+  
 }
 
 .special-offer {
@@ -299,6 +309,7 @@ body {
 }
 
 /* КАТАЛОГ */
+
 
 .basket-inside {
   display: none;
