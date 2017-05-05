@@ -9,6 +9,7 @@ body {
 }
 
 .btn {
+  display: inline-block;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -17,7 +18,7 @@ body {
   text-align: center;
   cursor: pointer;
   color: white;
-  background-color: rgb(231, 79, 55);
+  background-color: rgb(234, 85, 58);
 }
 
 .submenu {
@@ -117,7 +118,9 @@ body {
 }
 
 .timetable {
+  position: absolute;
   text-align: right;
+  right: 377px;
 }
 
 .timetable p {
@@ -138,9 +141,8 @@ body {
 }
 
 .slider {
-  min-height: 489px;
-  width: 100%;
-  
+  min-height: 531px;
+  width: 100%; 
 }
 
 .special-offer {
@@ -152,6 +154,38 @@ body {
 
 .special-offer-left, .special-offer-right {
   width: 560px;
+}
+
+.special-offer h2 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  padding-left: 19px;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+.special-offer-left p, .special-offer-right p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  padding-left: 20px;
+  margin-top: 15px;
+  padding-right: 15px;
+}
+
+.special-offer-left .btn {
+  padding: 11px 22px;
+  margin-left: 375px;
+  margin-top: 26px;
+  border-radius: 25px;
+}
+
+.special-offer-right .btn {
+  padding: 11px 21px;
+  margin-left: 350px;
+  margin-top: 25px;
+  border-radius: 25px;
 }
 
 .special-offer-left {
@@ -201,7 +235,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   min-height: 305px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   background-image: url(../img/waffle-bg.png);
   color: #323232;
 }
@@ -214,22 +248,13 @@ body {
   margin-bottom: 0px;
 }
 
-.features p {
-  width: 540px;
+.features-common {
+  width: 532px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   box-sizing: border-box;
   padding-left: 55px;
-}
-
-.features-icecream, .features-leaf {
-  margin-left: 20px;
-  margin-right: 26px;
-}
-
-.features-cow, .features-termometr {
-  margin-right: 20px;
 }
 
 .news {
@@ -241,11 +266,63 @@ body {
 
 .news-left {
   width: 560px;
-  background-image: url(../img/strawberry-bg.png)
+  color: #323232;
+  background-image: url(../img/strawberry-bg.png);
+}
+
+.news-left p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  padding-left: 20px;
+  margin-top: 24px;
+  margin-bottom: 4px;
+}
+
+.news-left a {
+  display: flex;
+  width: 330px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #323232;
+  padding-left: 20px;
 }
 
 .news-right {
   width: 560px;
+  background-color: rgb(248, 247, 244);
+}
+
+.news-right p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  padding-left: 27px;
+  margin-top: 34px;
+  color: #5a5a5a;
+  width: 519px;
+}
+
+.news-right form {
+  margin-top: 35px;
+  padding-left: 27px;
+}
+
+.news-email {
+  padding: 12px 0;
+  padding-left: 12px;
+  width: 352px;
+  border: 1px #d3d3d2 solid;
+  border-radius: 5px;
+  color: #999999;
+}
+
+.news-right .btn {
+  padding: 11px 18px;
+  margin-left: 9px;
+  border: none;
+  border-radius: 25px;
 }
 
 .gallery {
@@ -272,13 +349,61 @@ body {
 
 .contacts {
   position: absolute;
-  top: 55px;
+  top: 62px;
   left: 50%;
-  width: 300px;
+  width: 276px;
   min-height: 305px;
   background-color: #ffffff;
   text-align: left;
   margin-left: 272px;
+  padding-left: 25px;
+  color: #323232;
+  border-radius: 15px;
+}
+
+.contacts p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.contacts p:nth-child(1) {
+  margin-top: 28px;
+  margin-bottom: 0;
+  width: 155px;
+}
+
+.contacts p:nth-child(2) {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  width: 250px;
+  margin-top: 3px;
+  margin-bottom: 16px;
+}
+
+.contacts p:nth-child(3) {
+  width: auto;
+  margin-bottom: 6px;
+}
+
+.contacts .tel {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #323232;
+  text-decoration: none;
+  margin-bottom: 0px;
+}
+
+.contacts p:nth-child(5) {
+  margin-top: 2px;
+}
+
+.contacts .btn {
+  padding: 11px 28px;
+  margin-top: 11px;
+  border-radius: 25px;
 }
 
 .main-footer-layout {
@@ -315,6 +440,3 @@ body {
   display: none;
 }
 
-div, article, header, footer, section, a, p, span {
-outline: 1px solid red;
-}
