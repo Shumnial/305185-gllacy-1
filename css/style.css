@@ -228,7 +228,26 @@ body {
   font-size: 30px;
   line-height: 45px;
   font-weight: 700;
+  padding-left: 35px;
 }
+
+.sprite-rouble::before {
+  content: "";
+  position: absolute;
+  top: 48%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.kg::before {
+  width: 31px;
+  height: 36px;
+  background-position: -10px -983px;
+}
+
+
 
 .features {
   display: flex;
