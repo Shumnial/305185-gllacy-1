@@ -247,8 +247,6 @@ body {
   background-position: -10px -983px;
 }
 
-
-
 .features {
   display: flex;
   justify-content: space-between;
@@ -430,7 +428,55 @@ body {
 }
 
 .footer-social {
+  display: flex;
+  justify-content: space-between;
   margin-right: 105px;
+  font-size: 0px;
+  width: 187px;
+}
+
+.social-btn {
+  width: 32px;
+  height: 32px;
+  border: 3px #c2cec7 solid;
+  border-radius: 100%;
+  margin-top: 34px;
+  background-color: #e6ebe9;
+  position: relative;
+}
+
+.social-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+}
+
+.social-btn-twitter::before {
+  width: 32px;
+  height: 32px;
+  background-position: -10px -1039px;
+}
+
+.social-btn-inst::before {
+  width: 32px;
+  height: 32px;
+  background-position: -10px -611px;
+}
+
+.social-btn-fb::before {
+  width: 32px;
+  height: 32px;
+  background-position: -10px -250px;
+}
+
+.social-btn-vk::before {
+  width: 32px;
+  height: 32px;
+  background-position: -10px -1091px;
 }
 
 .footer-menu {
@@ -450,6 +496,24 @@ body {
 
 .copyright {
   margin-left: auto;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.copyright img {
+  margin-top: 18px;
+  margin-left: 2px;
+  margin-bottom: 0px;
+}
+
+.copyright p {
+  margin-top: 0px;
+}
+
+.copyright a {
+  color: white;
+  text-decoration: none;
 }
 
 /* КАТАЛОГ */
