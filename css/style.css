@@ -217,6 +217,7 @@ body {
 }
 
 .gallery-card {
+  position: relative;
   width: 267px;
 }
 
@@ -294,7 +295,8 @@ body {
 .news-left {
   width: 560px;
   color: #323232;
-  background-image: url(../img/strawberry-bg.png);
+  background-image: url(../img/strawberry-bg.jpg);
+  border-radius: 15px;
 }
 
 .news-left p {
@@ -316,10 +318,24 @@ body {
   padding-left: 20px;
 }
 
-.news-right {
+.pattern-bg {
   width: 560px;
-  height: 220px;
+  min-height: 220px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url(../img/post-pattern.jpg);
+  background-repeat: repeat;
+  border-radius: 15px;
+}
+
+.news-right {
+  width: 550px;
+  height: 210px;
   background-color: rgb(248, 247, 244);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 15px;
 }
 
 .news-right p {
@@ -351,17 +367,6 @@ body {
   margin-left: 9px;
   border: none;
   border-radius: 25px;
-}
-
-.gallery {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.gallery-card {
-  position: relative;
-  width: 267px;
 }
 
 .map {
@@ -577,6 +582,16 @@ h1 {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+}
+
+.filters {
+  display: flex;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 
