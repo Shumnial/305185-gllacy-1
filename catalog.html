@@ -26,11 +26,13 @@
             <li><a href="#">О Компании</a></li>
           </ul>
         </nav>
-        <div class="user-block">
+        <div class="search-block">
           <button class="search-button"></button>
           <form action="#" method="get">
             <input class="search" type="search" name="search" value="Что ищем?">
           </form>
+        </div>
+        <div class="user-block">
           <a class="login btn" href="#">Вход</a>
           <form class="login-form" action="#" method="get">
             <input class="email" type="text" name="email" value="Электронная почта">
@@ -49,23 +51,28 @@
     </header>
     <main class="container">
       <div class="breadcrumbs">
-        <a href="#">Главная</a>
+        <a href="index.html">Главная</a>
         <a href="#">Каталог</a>
         <a href="#">Сливочное</a>
       </div>
       <h1>Сливочное мороженое</h1>
+      <section class="filters">
       <form action="#" method="get">
-        <h2>Сортировка:</h2>
-        <select class="sort-by">
-          <option value="popularity">по популярности</option>
-          <option value="cheap-first">сначала недорогие</option>
-          <option value="expensive-first">сначала дорогие</option>
-          <option value="fat-content">по жирности</option>
-        </select>
+        <div class="sort-by">
+          <h2>Сортировка:</h2>
+          <select>
+            <option value="popularity">по популярности</option>
+            <option value="cheap-first">сначала недорогие</option>
+            <option value="expensive-first">сначала дорогие</option>
+            <option value="fat-content">по жирности</option>
+          </select>
+        </div>
+        <div class="sort-by-price">
         <h2>Цена: 100 руб. - 500 руб.</h2>
         <div class="range-filter"></div>
-        <h2>Жирность:</h2>
+        </div>
         <div class="sort-by-fat">
+          <h2>Жирность:</h2>
           <label><input type="checkbox">0%</label>
           <label><input type="checkbox">до 10%</label>
           <label><input type="checkbox">до 30%</label>
@@ -80,7 +87,8 @@
           <label><input type="checkbox">джемы</label>
         </div>
         <input class="btn" type="submit" value="Применить">
-      </form>
+        </form>
+      </section>
       <section class="gallery">
         <article class="gallery-card">
           <img src="img/product-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
@@ -163,17 +171,6 @@
         <a href="#">5</a>
       </div>
     </main>
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461636648!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1487736581834" width="1200" height="430" style="border:0" allowfullscreen></iframe>
-      <div class="contacts">
-        <p>Адрес главного офиса и офлайн магазина:</p>
-        <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-        <p>Для заказов по телефону:</p>
-        <a class="tel" href="tel:+7(812)450-25-25">8 812 450-25-25</a>
-        <p>(с 10 до 20 ежедневно)</p>
-        <a class="btn" href="#">Форма обратной связи</a>\
-      </div>
-    </div>
     <footer class="main-footer">
       <div class="main-footer-layout container">
         <div class="footer-social">
@@ -184,7 +181,7 @@
         </div>
         <div class="footer-menu">
           <ul>
-            <li><a href="#">Для поставщиков</a></li>
+            <li><a href="bold">Для поставщиков</a></li>
             <li><a href="#">Наши документы</a></li>
             <li><a href="#">О производстве</a></li>
             <li><a href="#">Экологические стандарты</a></li>

@@ -52,7 +52,7 @@ body {
 }
 
 .main-header {
-  margin-bottom: 41px;
+  margin-bottom: 0px;
 }
 
 .main-header-layout {
@@ -93,10 +93,14 @@ body {
   color: white;
 }
 
-.user-block {
-  width: 270px;
+.search-block {
   margin-left: auto;
-  padding-top: 2px;
+}
+
+.user-block {
+  width: 220px;
+  margin-left: auto;
+  padding-top: 24px;
 }
 
 .login, .basket {
@@ -112,7 +116,7 @@ body {
   width: 93px;
   padding: 7px 0px;
   padding-left: 30px;
-  margin-left: 50px;
+  
   margin-right: 7px;
 }
 
@@ -133,7 +137,7 @@ body {
   line-height: 16px;
   font-weight: 700;
   margin-bottom: 4px;
-  margin-top: 25px;
+  margin-top: 19px;
 }
 
 .timetable .tel {
@@ -147,7 +151,8 @@ body {
 
 .slider {
   min-height: 531px;
-  width: 100%; 
+  width: 100%;
+  margin-bottom: 41px;
 }
 
 .special-offer {
@@ -194,11 +199,13 @@ body {
 }
 
 .special-offer-left {
-  background-image: url("../img/raspberry-bg.png");
+  background-image: url("../img/raspberry-bg.jpg");
+  border-radius: 15px;
 }
 
 .special-offer-right {
-  background-image: url("../img/chocolate-bg.png");
+  background-image: url("../img/chocolate-bg.jpg");
+  border-radius: 15px;
 }
 
 .most-popular {
@@ -249,7 +256,7 @@ body {
 .kg::before {
   width: 31px;
   height: 36px;
-  background-position: -10px -983px;
+  background-position: -10px -788px;
 }
 
 .features {
@@ -258,8 +265,16 @@ body {
   flex-wrap: wrap;
   min-height: 305px;
   margin-bottom: 41px;
-  background-image: url(../img/waffle-bg.png);
+  background-image: url(../img/waffle-bg.jpg);
+  border-radius: 15px;
   color: #323232;
+}
+
+.features-common {
+  width: 540px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 .features h3 {
@@ -269,16 +284,6 @@ body {
   padding-left: 20px;
   margin-bottom: 0px;
 }
-
-.features-common {
-  width: 532px;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-left: 55px;
-}
-
 .news {
   display: flex;
   min-height: 220px;
@@ -313,6 +318,7 @@ body {
 
 .news-right {
   width: 560px;
+  height: 220px;
   background-color: rgb(248, 247, 244);
 }
 
@@ -435,7 +441,7 @@ body {
 .footer-social {
   display: flex;
   justify-content: space-between;
-  margin-right: 105px;
+  margin-right: 210px;
   font-size: 0px;
   width: 187px;
 }
@@ -446,56 +452,75 @@ body {
   border: 3px #c2cec7 solid;
   border-radius: 100%;
   margin-top: 34px;
-  background-color: #e6ebe9;
   position: relative;
-}
-
-.social-btn::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-image: url(../img/sprite.png);
-  background-repeat: no-repeat;
 }
 
-.social-btn-twitter::before {
+.social-btn-twitter {
   width: 32px;
   height: 32px;
-  background-position: -10px -1039px;
+  background-position: -10px -844px;
 }
 
-.social-btn-inst::before {
+.social-btn-inst {
   width: 32px;
   height: 32px;
-  background-position: -10px -611px;
+  background-position: -10px -416px;
 }
 
-.social-btn-fb::before {
+.social-btn-fb {
   width: 32px;
   height: 32px;
   background-position: -10px -250px;
 }
 
-.social-btn-vk::before {
+.social-btn-vk {
   width: 32px;
   height: 32px;
-  background-position: -10px -1091px;
+  background-position: -10px -896px;
 }
 
 .footer-menu {
-  width: 330px;
+  width: 335px;
+  margin-top: 17px;
 }
 
 .footer-menu ul {
-  padding-left: 21px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 25px;
+  padding-right: 0;
 }
 
 .footer-menu li {
-  display: inline-block;
   font-size: 13px;
   line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.footer-menu li:nth-child(1) {
+  margin-right: 31px;
+}
+
+.footer-menu li:nth-child(3) {
+  margin-right: 43px;
+}
+
+.footer-menu a {
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Roboto", "Arial", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.footer-menu .bold {
   font-weight: 700;
 }
 
@@ -527,4 +552,37 @@ body {
 .basket-inside {
   display: none;
 }
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-top: 23px;
+}
+
+.breadcrumbs a {
+  margin-right: 17px;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.filters h2 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
 
