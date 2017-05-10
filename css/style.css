@@ -454,7 +454,7 @@ body {
 .social-btn {
   width: 32px;
   height: 32px;
-  border: 3px #c2cec7 solid;
+  outline: 3px #c2cec7 solid;
   border-radius: 100%;
   margin-top: 34px;
   position: relative;
@@ -576,6 +576,7 @@ h1 {
   line-height: 41px;
   font-weight: 700;
   margin-top: 5px;
+  margin-bottom: 14px;
 }
 
 .filters h2 {
@@ -584,8 +585,12 @@ h1 {
   font-weight: 500;
 }
 
-.filters {
+.filters form {
   display: flex;
+}
+
+.sort-by {
+  width: 240px;
 }
 
 .gallery {
