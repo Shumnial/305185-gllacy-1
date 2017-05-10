@@ -221,6 +221,21 @@ body {
   width: 267px;
 }
 
+.hit::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png"); 
+}
+
+.gallery-card::before {
+  width: 61px;
+  height: 61px;
+  background-position: -10px -611px;
+}
+
 .price {
   position: absolute;
   bottom: 80px;
@@ -257,7 +272,7 @@ body {
 .kg::before {
   width: 31px;
   height: 36px;
-  background-position: -10px -788px;
+  background-position: -10px -1064px;
 }
 
 .features {
@@ -454,7 +469,7 @@ body {
 .social-btn {
   width: 32px;
   height: 32px;
-  outline: 3px #c2cec7 solid;
+  border: 3px #c2cec7 solid;
   border-radius: 100%;
   margin-top: 34px;
   position: relative;
@@ -464,13 +479,13 @@ body {
 .social-btn-twitter {
   width: 32px;
   height: 32px;
-  background-position: -10px -844px;
+  background-position: -10px -1120px;
 }
 
 .social-btn-inst {
   width: 32px;
   height: 32px;
-  background-position: -10px -416px;
+  background-position: -10px -692px;
 }
 
 .social-btn-fb {
@@ -482,12 +497,28 @@ body {
 .social-btn-vk {
   width: 32px;
   height: 32px;
-  background-position: -10px -896px;
+  background-position: -10px -1172px;
 }
 
 .footer-menu {
   width: 335px;
   margin-top: 17px;
+  position: relative;
+}
+
+.footer-menu::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -5px;
+  transform: translate(50%, 50%);
+  background-image: url("../img/sprite.png");
+}
+
+.heart-icon::before {
+  width: 15px;
+  height: 13px;
+  background-position: -10px -578px;
 }
 
 .footer-menu ul {
