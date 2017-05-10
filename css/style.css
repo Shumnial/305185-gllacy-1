@@ -587,10 +587,97 @@ h1 {
 
 .filters form {
   display: flex;
+  flex-wrap: wrap;
 }
 
+/*.filters select, .filters label {
+  background-color: rgba(255, 255, 255, 0.2);
+}*/
+
 .sort-by {
-  width: 240px;
+  width: 195px;
+  margin-right: 14px;
+}
+
+.sort-by h2 {
+  padding-left: 16px;
+  margin-bottom: 5px;
+}
+
+.sort-by select {
+  padding: 8px 0;
+  padding-left: 10px;
+  padding-right: 18px;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.sort-by select:hover {
+  background-color: rgba(255, 255, 255, 1.0);
+  color: #323232;
+}
+
+.sort-by-price {
+  width: 220px;
+  margin-right: 13px;
+}
+
+.sort-by-price h2 {
+  padding-left: 14px;
+}
+
+.sort-by-fat {
+  width: 415px;
+}
+
+.sort-by-fat h2 {
+  padding-left: 15px;
+  margin-bottom: 6px;
+}
+
+.fat-percent {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 7px 0;
+  border-radius: 20px;
+}
+
+.sort-by-filler {
+  width: 703px;
+  margin-top: 5px;
+}
+
+.sort-by-filler h2 {
+  padding-left: 15px;
+  margin-bottom: 6px;
+}
+
+.filler-type {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 7px 0;
+  border-radius: 20px;
+}
+
+.filters .btn {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  margin-top: 38px;
+  margin-left: 13px;
+  height: 36px;
+  width: 144px;
+  border: 2px white solid;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  
+}
+
+.filters .btn:hover {
+  background-color: rgba(255, 255, 255, 1.0);
+  color: #323232;
 }
 
 .gallery {
