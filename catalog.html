@@ -8,6 +8,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="site-wrapper">
+    <div class="content-wrapper">
     <header class="main-header">
       <div class="main-header-layout container">
         <a><img class="logo" src="img/gllacy-logo.png" alt="Логотип Глейси" width="154" height="64"></a>
@@ -34,7 +36,7 @@
           </form>
         </div>
         <div class="user-block">
-          <a class="login btn" href="#">Вход</a>
+          <a class="login login-icon btn" href="#">Вход</a>
           <form class="login-form" action="#" method="get">
             <input class="email" type="text" name="email" value="Электронная почта">
             <input class="password" type="text" name="password" value="Пароль">
@@ -42,7 +44,7 @@
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
           </form>
-          <a class="basket btn" href="#">2 товара</a>
+          <a class="full-basket full-basket-icon btn" href="#">2 товара</a>
           <div class="timetable">
             <p>С 10 до 20, ежедневно</p>
             <a class="tel" href="tel:+7(812)450-25-25">8 812 450-25-25</a>
@@ -70,7 +72,13 @@
           </div>
           <div class="sort-by-price">
             <h2>Цена: 100 руб. — 500 руб.</h2>
-            <div class="range-filter"></div>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale"><div style="width: 60%;" class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+            </div>
           </div>
           <div class="sort-by-fat">
             <h2>Жирность:</h2>
