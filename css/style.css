@@ -779,6 +779,12 @@ body > input[type="radio"] {
   padding-left: 24px;
 }
 
+.modal-content placeholder::-webkit-input-placeholder {color:#c0392b;}
+
+.modal-content placeholder::-moz-placeholder {color:#c0392b;}
+
+.modal-content placeholder::-ms-input-placeholder {color:#c0392b;}
+
 .modal-content-show {
   display: block;
   -webkit-animation: bounce 0.6s;
