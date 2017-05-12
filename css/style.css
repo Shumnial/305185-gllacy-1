@@ -41,7 +41,7 @@ body > input[type="radio"] {
 }
 
 .modal-content {
-  display: none;
+  display: block;
 }
 
 .site-wrapper {
@@ -154,7 +154,7 @@ body > input[type="radio"] {
 .loupe-icon {
   width: 17px;
   height: 17px;
-  background-position: -10px -859px;
+  background-position: -10px -896px;
 }
 .user-block {
   position: relative;
@@ -197,11 +197,11 @@ body > input[type="radio"] {
 .login-icon::before {
   width: 21px;
   height: 19px;
-  background-position: -10px -783px;
+  background-position: -10px -820px;
 }
 
 .login:hover::before {
-  background-position: -10px -744px;
+  background-position: -10px -781px;
 }
 
 .user-block .login:hover {
@@ -456,7 +456,7 @@ body > input[type="radio"] {
 .gallery-card::before {
   width: 61px;
   height: 61px;
-  background-position: -10px -611px;
+  background-position: -10px -648px;
 }
 
 .price {
@@ -495,7 +495,7 @@ body > input[type="radio"] {
 .kg::before {
   width: 31px;
   height: 36px;
-  background-position: -10px -1064px;
+  background-position: -10px -1101px;
 }
 
 .features {
@@ -562,25 +562,25 @@ body > input[type="radio"] {
 .features-icecream::before {
   width: 49px;
   height: 49px;
-  background-position: -10px -371px;
+  background-position: -10px -408px;
 }
 
 .features-cow::before {
   width: 48px;
   height: 49px;
-  background-position: -10px -302px;
+  background-position: -10px -339px;
 }
 
 .features-leaf::before {
   width: 49px;
   height: 49px;
-  background-position: -10px -440px;
+  background-position: -10px -477px;
 }
 
 .features-thermometr::before {
   width: 48px;
   height: 49px;
-  background-position: -10px -509px;
+  background-position: -10px -546px;
 }
 
 .news {
@@ -762,6 +762,108 @@ body > input[type="radio"] {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
+.modal-content {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 454px;
+  height: 442px;
+  margin-left: -237px;
+  margin-top: -295px;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px 3px #595a5a;
+  z-index: 120;
+  color: #323232;
+  padding-left: 24px;
+}
+
+.modal-content-show {
+  display: block;
+  -webkit-animation: bounce 0.6s;
+  animation: bounce 0.6s;
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 77px;
+  right: 0px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: -54px;
+  right: 6px;
+  transform: translate(-49%, -49%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 17px;
+  background-position: -10px -250px;
+}
+
+.modal-content-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-top: 16px;
+  margin-bottom: 19px;
+  color: #323232;
+}
+
+.username, .email {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-top: 2px;
+  width: 251px;
+  height: 41px;
+  margin-bottom: 18px;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px #d3d3d2 solid;
+}
+
+.write-us textarea {
+  width: 410px;
+  height: 140px; 
+  padding-top: 12px;
+  padding-left: 14px;
+  border: 1px #d3d3d2 solid;
+  border-radius: 5px;
+}
+
+.write-us .btn {
+  padding: 10px 23px;
+  margin-top: 20px;
+  margin-left: 291px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(234, 85, 58);
+  background-color: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.write-us .btn:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1.0);
+}
+
+.write-us .btn:active {
+  background: linear-gradient(to bottom, #e74a35 0%, #f26843 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
 
 .main-footer-layout {
   display: flex;
@@ -788,25 +890,25 @@ body > input[type="radio"] {
 .social-btn-twitter {
   width: 32px;
   height: 32px;
-  background-position: -10px -1120px;
+  background-position: -10px -1157px;
 }
 
 .social-btn-inst {
   width: 32px;
   height: 32px;
-  background-position: -10px -692px;
+  background-position: -10px -729px;
 }
 
 .social-btn-fb {
   width: 32px;
   height: 32px;
-  background-position: -10px -250px;
+  background-position: -10px -287px;
 }
 
 .social-btn-vk {
   width: 32px;
   height: 32px;
-  background-position: -10px -1172px;
+  background-position: -10px -1209px;
 }
 
 .footer-menu {
@@ -827,7 +929,7 @@ body > input[type="radio"] {
 .heart-icon::before {
   width: 15px;
   height: 13px;
-  background-position: -10px -578px;
+  background-position: -10px -615px;
 }
 
 .footer-menu ul {
@@ -1076,19 +1178,19 @@ h1 {
   cursor: pointer;
   width: 21px;
   height: 22px;
-  background-position: -10px -980px;
+  background-position: -10px -1017px;
 }
 
 .wrap-fat input[type="checkbox"]:checked + label::before {
-  background-position: -10px -1022px;
+  background-position: -10px -1059px;
 }
 
 .wrap-fat input[type="checkbox"] + label:hover::before {
-  background-position: -10px -896px;
+  background-position: -10px -933px;
 }
 
 .wrap-fat input[type="checkbox"]:checked + label:hover::before {
-  background-position: -10px -938px;
+  background-position: -10px -975px;
 }
 
 .sort-by-filler {
