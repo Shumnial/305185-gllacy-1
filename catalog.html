@@ -32,7 +32,7 @@
               </ul>
             </nav>
             <div class="search-block">
-              <button class="search-button"></button>
+              <a href="#" class="search-button loupe-icon"></a>
               <form action="#" method="get">
                 <input class="search" type="search" name="search" value="Что ищем?">
               </form>
@@ -87,20 +87,37 @@
               <div class="sort-by-fat">
                 <h2>Жирность:</h2>
                 <div class="fat-percent">
-                  <label><input type="checkbox">0%</label>
-                  <label><input type="checkbox">до 10%</label>
-                  <label><input type="checkbox">до 30%</label>
-                  <label><input type="checkbox">выше 30%</label>
+                  <div class="wrap-fat">
+                    <input type="checkbox" name="fat-content" id="percent-zero" value="0%">
+                    <label for="percent-zero">0%</label>
+                  </div>
+                  <div class="wrap-fat">
+                    <input type="checkbox" name="fat-content" id="percent-ten" value="10%">
+                    <label for="percent-ten">до 10%</label>
+                  </div>
+                  <div class="wrap-fat">
+                    <input type="checkbox" name="fat-content" id="percent-thirty" value="30%">
+                    <label for="percent-thirty">до 30%</label>
+                  </div>
+                  <div class="wrap-fat">
+                    <input type="checkbox" name="fat-content" id="percent-over-thirty" value="over 30%">
+                    <label for="percent-over-thirty">выше 30%</label>
+                  </div>
                 </div>
               </div>
               <div class="sort-by-filler">
                 <h2>Наполнители:</h2>
                 <div class="filler-type">
-                  <label><input type="checkbox">шоколадные</label>
-                  <label><input type="checkbox">сахарные присыпки</label>
-                  <label><input type="checkbox">фрукты</label>
-                  <label><input type="checkbox">сиропы</label>
-                  <label><input type="checkbox">джемы</label>
+                  <input type="checkbox" name="fillers" id="filler-chocolate" value="chocolate">
+                  <label for="filler-chocolate">шоколадные</label>
+                  <input type="checkbox" name="fillers" id="filler-sugar-powders" value="sugar-powders">
+                  <label for="filler-sugar-powders">сахарные присыпки</label>
+                  <input type="checkbox" name="fillers" id="filler-fruits" value="fruits">
+                  <label for="filler-fruits">фрукты</label>
+                  <input type="checkbox" name="fillers" id="filler-syrups" value="syrops">
+                  <label for="filler-syrups">сиропы</label>
+                  <input type="checkbox" name="fillers" id="filler-jams" value="jams">
+                  <label for="filler-jams">джемы</label>
                 </div>
               </div>
               <input class="btn" type="submit" value="Применить">

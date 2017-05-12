@@ -107,11 +107,14 @@ body > input[type="radio"] {
 .main-navigation a:hover {
   background-color: #f7f6f3;
   color: #333333;
-  
+}
+
+.wrap-submenu {
+  position: absolute;
+  z-index: 1;
 }
 
 .submenu {
-  display: block;
   width: 143px;
   min-height: 170px;
   background-color: #f8f7f4;
@@ -134,10 +137,27 @@ body > input[type="radio"] {
 }
 
 .search-block {
-  margin-left: auto;
+  position: relative;
+  margin-left: 170px;
+  width: 205px;
 }
 
+.search-button {
+  content: "";
+  position: absolute;
+  top: 38px;
+  right: 3px;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+}
+
+.loupe-icon {
+  width: 17px;
+  height: 17px;
+  background-position: -10px -859px;
+}
 .user-block {
+  position: relative;
   width: 220px;
   margin-left: auto;
   padding-top: 23px;
@@ -211,7 +231,7 @@ body > input[type="radio"] {
 .timetable {
   position: absolute;
   text-align: right;
-  right: 377px;
+  right: 0;
 }
 
 .timetable p {
@@ -664,6 +684,11 @@ body > input[type="radio"] {
   position: relative;
 }
 
+.map iframe {
+  width: 100%;
+  height: 430px;
+}
+
 .contacts {
   position: absolute;
   top: 62px;
@@ -721,7 +746,22 @@ body > input[type="radio"] {
   padding: 11px 28px;
   margin-top: 11px;
   border-radius: 25px;
+  background-color: rgb(234, 85, 58);
+  background-color: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
+
+.contacts .btn:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1.0);
+}
+
+.contacts .btn:active {
+  background: linear-gradient(to bottom, #e74a35 0%, #f26843 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
 
 .main-footer-layout {
   display: flex;
@@ -1002,9 +1042,48 @@ h1 {
 
 .fat-percent {
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 7px 0;
+  padding: 7px 15px;
   border-radius: 20px;
+  display: flex;
 }
+
+.wrap-fat {
+  margin-right: 50px;
+  position: relative;
+}
+
+.wrap-fat:nth-child(1) {
+  margin-left: 32px;
+}
+
+.wrap-fat:nth-child(4) {
+  margin-right: 0;
+}
+
+
+.wrap-fat input[type="checkbox"] {
+  display: none;
+}
+
+.wrap-fat input[type="checkbox"] + label::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0px;
+  left: -31px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 21px;
+  height: 22px;
+  background-position: -10px -980px;
+}
+
+.wrap-fat input[type="checkbox"]:checked + label::before {
+  background-position: -10px -1022px;
+}
+
+
 
 .sort-by-filler {
   width: 703px;
