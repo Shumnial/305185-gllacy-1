@@ -138,24 +138,29 @@ body > input[type="radio"] {
 
 .search-block {
   position: relative;
-  margin-left: 170px;
-  width: 205px;
+  margin-left: 230px;
+  width: 150px;
+  height: 55px;
+  text-align: right;
 }
 
 .search-button {
-  content: "";
-  position: absolute;
-  top: 38px;
-  right: 3px;
-  transform: translate(-50%, -50%);
+  display: inline-block;
   background-image: url("../img/sprite.png");
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  background-position: -3px -889px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 8px;
+  margin-top: 23px;
 }
 
-.loupe-icon {
-  width: 17px;
-  height: 17px;
-  background-position: -10px -896px;
+.search-button:hover {
+  background-position: -3px -852px;
+  background-color: rgba(248, 247, 244, 1.0);
 }
+
 .user-block {
   position: relative;
   width: 220px;
@@ -480,6 +485,7 @@ body > input[type="radio"] {
   line-height: 45px;
   font-weight: 700;
   padding-left: 35px;
+  left: 0;
 }
 
 .sprite-rouble::before {
@@ -1085,6 +1091,9 @@ h1 {
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
+  border: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
 }
 
 .sort-by select:hover {
