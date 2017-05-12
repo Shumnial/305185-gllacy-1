@@ -41,7 +41,7 @@ body > input[type="radio"] {
 }
 
 .modal-content {
-  display: block;
+  display: none;
 }
 
 .site-wrapper {
@@ -470,6 +470,7 @@ body > input[type="radio"] {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
+  left: 0;
 }
 
 .product-name {
@@ -485,7 +486,6 @@ body > input[type="radio"] {
   line-height: 45px;
   font-weight: 700;
   padding-left: 35px;
-  left: 0;
 }
 
 .sprite-rouble::before {
@@ -1294,6 +1294,7 @@ h1 {
 
 .gallery-card::after {
   content: "";
+  display: none;
   position: absolute;
   top: 58%;
   left: 50%;
@@ -1302,6 +1303,10 @@ h1 {
   height: 405px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
+}
+
+.gallery-card:hover::after {
+  display: block;
 }
 
 .gallery {
@@ -1314,5 +1319,31 @@ h1 {
   margin-bottom: 22px;
 }
 
-.gallery-card .btn {}
+.pagination {
+  width: 190px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.pagination a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding-top: 5px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+
+.pagination a:hover {
+  background-color: white;
+  color: black;
+}
+
+.pagination a:nth-child(1) {
+}
 
