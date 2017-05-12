@@ -1083,7 +1083,13 @@ h1 {
   background-position: -10px -1022px;
 }
 
+.wrap-fat input[type="checkbox"] + label:hover::before {
+  background-position: -10px -896px;
+}
 
+.wrap-fat input[type="checkbox"]:checked + label:hover::before {
+  background-position: -10px -938px;
+}
 
 .sort-by-filler {
   width: 703px;
