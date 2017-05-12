@@ -138,7 +138,7 @@ body > input[type="radio"] {
 
 .search-block {
   position: relative;
-  margin-left: 230px;
+  margin-left: 228px;
   width: 150px;
   height: 55px;
   text-align: right;
@@ -1317,6 +1317,10 @@ h1 {
 
 .gallery-card {
   margin-bottom: 22px;
+}
+
+.gallery-card .btn {
+  padding: 10px 15px;
 }
 
 .pagination {
