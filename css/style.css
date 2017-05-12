@@ -1327,6 +1327,8 @@ h1 {
   width: 190px;
   margin-left: auto;
   text-align: center;
+  margin-top: 43px;
+  margin-bottom: 31px;
 }
 
 .pagination a {
@@ -1344,10 +1346,17 @@ h1 {
 }
 
 .pagination a:hover {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.pagination a:active {
+  background-color: rgba(255, 255, 255, 1.0);
   color: black;
 }
 
-.pagination a:nth-child(1) {
+.pagination .active-page {
+  background-color: white;
+  color: black;
 }
 
