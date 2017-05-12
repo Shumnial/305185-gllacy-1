@@ -1279,6 +1279,22 @@ h1 {
   color: #323232;
 }
 
+.gallery-card {
+  position: relative;
+}
+
+.gallery-card::after {
+  content: "";
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 293px;
+  height: 405px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
 .gallery {
   display: flex;
   justify-content: space-between;
@@ -1288,4 +1304,6 @@ h1 {
 .gallery-card {
   margin-bottom: 22px;
 }
+
+.gallery-card .btn {}
 
