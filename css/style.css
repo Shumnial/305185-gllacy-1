@@ -770,7 +770,7 @@ body > input[type="radio"] {
 }
 
 .modal-content {
-  display: none;
+  display: block;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1179,11 +1179,12 @@ h1 {
 }
 
 
-.wrap-fat input[type="checkbox"] {
+.wrap-fat input[type="checkbox"],
+.wrap-fat input[type="radio"]{
   display: none;
 }
 
-.wrap-fat input[type="checkbox"] + label::before {
+.wrap-fat input[type="radio"] + label::before {
   position: absolute;
   content: "";
   display: block;
@@ -1197,15 +1198,15 @@ h1 {
   background-position: -10px -1017px;
 }
 
-.wrap-fat input[type="checkbox"]:checked + label::before {
+.wrap-fat input[type="radio"]:checked + label::before {
   background-position: -10px -1059px;
 }
 
-.wrap-fat input[type="checkbox"] + label:hover::before {
+.wrap-fat input[type="radio"] + label:hover::before {
   background-position: -10px -933px;
 }
 
-.wrap-fat input[type="checkbox"]:checked + label:hover::before {
+.wrap-fat input[type="radio"]:checked + label:hover::before {
   background-position: -10px -975px;
 }
 
