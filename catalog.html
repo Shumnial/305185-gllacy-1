@@ -15,7 +15,7 @@
             <a href="index.html"><img class="logo" src="img/gllacy-logo.png" alt="Логотип Глейси" width="154" height="64"></a>
             <nav class="main-navigation">
               <ul>
-                <li>
+                <li class="current-page">
                   <a href="#">Каталог</a>
                   <div class="wrap-submenu">
                     <ul class="submenu">
@@ -39,14 +39,38 @@
             </div>
             <div class="user-block">
               <a class="login login-icon btn" href="#">Вход</a>
-              <form class="login-form" action="#" method="get">
-                <input class="email" type="text" name="email" value="Электронная почта">
-                <input class="password" type="text" name="password" value="Пароль">
-                <button class="btn">Войти</button>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </form>
+              <div class="wrap-login-form">
+                <form class="login-form" action="#" method="get">
+                  <input class="email" type="text" name="email" placeholder="Электронная почта">
+                  <input class="password" type="text" name="password" placeholder="Пароль">
+                  <button class="btn">Войти</button>
+                  <div class="help-links">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </form>
+              </div>
               <a class="full-basket full-basket-icon btn" href="#">2 товара</a>
+              <div class="wrap-basket">
+                <div class="basket-inside">
+                  <table>
+                    <tr>
+                      <td><img src="#"></td>
+                      <td>Пломбир с апельсиновым джемом</td>
+                      <td>1,5 кг x 200 руб.</td>
+                      <td>300 руб.</td>
+                    </tr>
+                    <tr>
+                      <td><img src="#"></td>
+                      <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td>1,5 кг x 300 руб.</td>
+                      <td>450 руб.</td>
+                    </tr>
+                  </table>
+                  <p>Итого: 750 руб.</p>
+                  <a class="btn" href="#">Оформить заказ</a>
+                </div>
+              </div>
               <div class="timetable">
                 <p>С 10 до 20, ежедневно</p>
                 <a class="tel" href="tel:+7(812)450-25-25">8 812 450-25-25</a>
@@ -88,7 +112,7 @@
                 <h2>Жирность:</h2>
                 <div class="fat-percent">
                   <div class="wrap-fat">
-                    <input type="radio" name="fat-content" id="percent-zero" value="0%">
+                    <input type="radio" name="fat-content" id="percent-zero" value="0%" disabled>
                     <label for="percent-zero">0%</label>
                   </div>
                   <div class="wrap-fat">
@@ -117,7 +141,7 @@
                     <label for="filler-sugar-powders">сахарные присыпки</label>
                   </div>
                   <div class="wrap-filler">
-                    <input type="checkbox" name="fillers" id="filler-fruits" value="fruits">
+                    <input type="checkbox" name="fillers" id="filler-fruits" value="fruits" disabled>
                     <label for="filler-fruits">фрукты</label>
                   </div>
                   <div class="wrap-filler">
@@ -232,7 +256,7 @@
               </ul>
             </div>
             <div class="copyright">
-              <a><img src="img/html-logo.png" alt="Логотип HTML Academy" width="108" height="38"></a>
+              <img src="img/html-logo.png" alt="Логотип HTML Academy" width="108" height="38">
               <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
             </div>
           </div>

@@ -22,7 +22,7 @@
                   <a href="catalog.html">Каталог</a>
                   <div class="wrap-submenu">
                     <ul class="submenu">
-                      <li><a href="#">Новинки</a></li>
+                      <li><a class="new" href="#">Новинки</a></li>
                       <li><a href="#">Сливочное</a></li>
                       <li><a href="#">Щербеты</a></li>
                       <li><a href="#">Фруктовый лед</a></li>
@@ -36,19 +36,25 @@
             </nav>
             <div class="search-block">
               <a class="search-button"></a>
-              <form action="#" method="get">
-                <input class="search" type="search" name="search" value="Что ищем?">
-              </form>
+              <div class="wrap-search">
+                <form action="#" method="get">
+                  <input class="search" type="search" name="search" placeholder="Что ищем?">
+                </form>
+              </div>
             </div>
             <div class="user-block">
               <a class="login login-icon btn" href="#">Вход</a>
-              <form class="login-form" action="#" method="get">
-                <input class="email" type="text" name="email" placeholder="Электронная почта">
-                <input class="password" type="text" name="password" placeholder="Пароль">
-                <button class="btn">Войти</button>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </form>
+              <div class="wrap-login-form">
+                <form class="login-form" action="#" method="get">
+                  <input class="email" type="text" name="email" placeholder="Электронная почта">
+                  <input class="password" type="text" name="password" placeholder="Пароль">
+                  <button class="btn">Войти</button>
+                  <div class="help-links">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </form>
+              </div>
               <a class="basket basket-icon btn" href="#">Пусто</a>
               <div class="timetable">
                 <p>С 10 до 20, ежедневно</p>
@@ -174,19 +180,19 @@
           </div>
         </footer>
       </div>
-        <div class="modal-content">
-          <button class="modal-content-close" title="Закрыть">Закрыть</button>
-          <h2 class="modal-content-title">Мы обязательно вам ответим!</h2>
-          <form class="write-us" action="https://echo.htmlacademy.ru" method="get">
-            <label for="username-field"></label>
-            <input class="username" type="text" name="username" id="username-field" placeholder="Как вас зовут?">
-            <label for="email-field"></label>
-            <input class="email" type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?">
-            <label for="text-area"></label>
-            <textarea name="text" id="text-area" placeholder="Напишите что-нибудь..."></textarea>
-            <button class="btn">Отправить</button>
-          </form>
-        </div>
+      <div class="modal-content">
+        <button class="modal-content-close" title="Закрыть">Закрыть</button>
+        <h2 class="modal-content-title">Мы обязательно вам ответим!</h2>
+        <form class="write-us" action="https://echo.htmlacademy.ru" method="get">
+          <label for="username-field"></label>
+          <input class="username" type="text" name="username" id="username-field" placeholder="Как вас зовут?">
+          <label for="email-field"></label>
+          <input class="email" type="text" name="email" id="email-field" placeholder="Ваша почта для ответа?">
+          <label for="text-area"></label>
+          <textarea name="text" id="text-area" placeholder="Напишите что-нибудь..."></textarea>
+          <button class="btn">Отправить</button>
+        </form>
       </div>
+    </div>
   </body>
 </html>
