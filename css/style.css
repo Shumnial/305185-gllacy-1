@@ -329,6 +329,11 @@ a {
   padding-top: 5px;
 }
 
+.login:hover + .wrap-login-form {
+  display: block;
+}
+
+
 .login-form {
   position: relative;
   width: 277px;
@@ -337,10 +342,6 @@ a {
   border-radius: 5px;
   box-sizing: border-box;
   background-color: #f8f7f4;
-}
-
-.login:hover + .wrap-login-form {
-  display: block;
 }
 
 .login-form .email {
@@ -551,6 +552,7 @@ a {
 .special-offer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   min-height: 229px;
   margin-bottom: 40px;
 }
@@ -559,6 +561,7 @@ a {
   width: 560px;
   padding-bottom: 20px;
   box-sizing: border-box;
+  min-height: 229px;
 }
 
 .special-offer h2 {
@@ -784,6 +787,7 @@ a {
   min-height: 220px;
   justify-content: space-between;
   margin-bottom: 40px;
+  align-items: flex-start;
 }
 
 .news-left {
@@ -825,7 +829,7 @@ a {
 
 .news-right {
   width: 550px;
-  height: 210px;
+  min-height: 210px;
   background-color: rgb(248, 247, 244);
   position: absolute;
   top: 5px;
@@ -1194,6 +1198,7 @@ a {
 }
 
 .user-block .full-basket {
+  position: relative;
   width: 116px;
   padding: 8px 0px;
   padding-right: 17px;
@@ -1238,16 +1243,12 @@ a {
   line-height: 16px;
   font-weight: 400;
   color: #323232;
-  display: block;
   width: 539px;
   height: 242px;
-  z-index: 1;
   background-color: #f8f7f4;
   box-sizing: border-box;
   border-radius: 5px;
-  padding: 0 15px;
-  padding-top: 10px;
-  
+  padding: 8px 15px;
 }
 
 .basket-inside table {
@@ -1258,7 +1259,6 @@ a {
   border-collapse: collapse;
   border-bottom: 1px solid #cacac7;
 }
-
 
 .basket-inside tr {
   height: 54px;
@@ -1271,12 +1271,12 @@ a {
 }
 
 .basket-inside img {
-  margin-left: 1px;
-  margin-right: 8px;
+  margin-left: 0px;
+  margin-right: 7px;
 }
 
 .cel-1, .cel-2 {
-  width: 220px;
+  width: 223px;
 }
 
 .col-3 {
@@ -1327,6 +1327,10 @@ a {
   content: "»";
   position: absolute;
   left: 60px;
+}
+
+.breadcrumbs a:hover::after {
+  color: white;
 }
 
 .breadcrumbs a:nth-child(3)::after {
