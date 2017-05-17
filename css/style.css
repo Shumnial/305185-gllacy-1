@@ -260,6 +260,7 @@ a {
 
 .user-block {
   position: relative;
+  display: flex;
   width: 220px;
   margin-left: auto;
   padding-top: 23px;
@@ -324,12 +325,18 @@ a {
 .wrap-login-form {
   position: absolute;
   display: none;
-  right: 125px;
+  top: 30px;
+  right: 5px;
   z-index: 1;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
-.login:hover + .wrap-login-form {
+.login-block {
+  position: relative;
+  height: 33px;
+}
+
+.login-block:hover .wrap-login-form {
   display: block;
 }
 
@@ -431,6 +438,7 @@ a {
 .timetable {
   position: absolute;
   text-align: right;
+  margin-top: 31px;
   right: 0;
 }
 
@@ -586,7 +594,7 @@ a {
 .special-offer-left .btn {
   padding: 11px 23px;
   margin-left: 374px;
-  border-radius: 25px;
+  border-radius: 20px;
   text-shadow: none;
 }
 
@@ -594,7 +602,7 @@ a {
   padding: 10px 22px;
   padding-bottom: 11px;
   margin-left: 350px;
-  border-radius: 25px;
+  border-radius: 20px;
   text-shadow: none;
 }
 
@@ -792,6 +800,7 @@ a {
 
 .news-left {
   width: 560px;
+  min-height: 210px;
   color: #323232;
   background-image: url(../img/strawberry-bg.jpg);
   background-repeat: no-repeat;
@@ -865,7 +874,7 @@ a {
   padding: 10px 18px;
   margin-left: 9px;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
   text-shadow: none;
 }
 
@@ -936,7 +945,7 @@ a {
 .contacts .btn {
   padding: 10px 27px;
   margin-top: 11px;
-  border-radius: 25px;
+  border-radius: 20px;
   text-shadow: none;
 }
 
@@ -1032,7 +1041,7 @@ a {
   margin-top: 20px;
   margin-left: 291px;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .main-footer-layout {
@@ -1228,12 +1237,18 @@ a {
 .wrap-basket {
   display: none;
   position: absolute;
+  top: 30px;
   right: 0px;
   z-index: 1;
-  padding-top: 4px;
+  padding-top: 10px;
 }
 
-.full-basket:hover + .wrap-basket {
+.basket-block {
+  height: 33px;
+  position: relative;
+}
+
+.basket-block:hover .wrap-basket {
   display: block;
 }
 
@@ -1665,7 +1680,7 @@ h1 {
   position: relative;
   display: none;
   padding: 10px 15px;
-  border-radius: 25px;
+  border-radius: 20px;
   background-color: rgb(234, 85, 58);
   text-shadow: none;
 }
@@ -1696,49 +1711,40 @@ h1 {
 }
 
 .pagination {
-  position: relative;
-  width: 190px;
+  width: 199px;
   margin-left: auto;
-  text-align: center;
+  margin-right: 0px;
+  margin-bottom: 35px;
   margin-top: 43px;
-  margin-bottom: 34px;
-}
-
-.pagination::after {
-  content: "";
-  width: 9px;
-  height: 14px;
-  top: 12px;
-  right: -5px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background-image: url("../img/paginator-arrow.png"); 
-}
-
-.pagination::before {
-  content: "";
-  width: 9px;
-  height: 14px;
-  top: 6px;
-  left: 0px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  transform: rotate(-180deg);
-  background-image: url("../img/paginator-arrow.png");
+  box-sizing: border-box;
 }
 
 .pagination a {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  padding-top: 5px;
-  border-radius: 50%;
-  box-sizing: border-box;
+  font-family: 'Roboto Medium', 'Arial', sans-serif;
   font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
+  line-height: 25px;
+  display: inline-block;
+  min-width: 25px;
+  height: 25px;
+  text-align: center;
+  vertical-align: middle;
   text-decoration: none;
-  color: white;
+  color: #fff;
+}
+
+.previous-page {
+  font-size: 0;
+  -webkit-transform: rotate(135deg) scale(.3);
+  transform: rotate(135deg) scale(.3);    
+  opacity: 0.4;
+  box-shadow: 4px 4px 0 1px #fff;
+}
+
+.next-page {
+  font-size: 0;
+  -webkit-transform: rotate(-45deg) scale(.3);
+  transform: rotate(-45deg) scale(.3);
+  box-shadow: 4px 4px 0 1px #fff;
 }
 
 .pagination a:hover {
@@ -1752,8 +1758,9 @@ h1 {
 }
 
 .pagination .active-page {
-  background-color: white;
   color: black;
+  border-radius: 50%;
+  background: #fff;
 }
 
 .dash {
