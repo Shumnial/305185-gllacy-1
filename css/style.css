@@ -92,6 +92,7 @@ a {
 
 .main-navigation li {
   display: inline-block;
+  position: relative;
   vertical-align: top;
   margin-top: 23px;
   margin-right: 2px;
@@ -126,8 +127,8 @@ a {
 .wrap-submenu {
   display: none;
   position: absolute;
+  left: -19px;
   z-index: 1;
-  left: 525px;
 }
 
 .submenu {
@@ -147,6 +148,10 @@ a {
   margin: 0;
   padding: 0;
   border-radius: 0;
+}
+
+.submenu li:active {
+  box-shadow: none;
 }
 
 .submenu a {
@@ -214,6 +219,7 @@ a {
   top: 50px;
   right: 5px;
   z-index: 1;
+  padding-top: 10px;
 }
 
 .search-block:hover .wrap-search  {
@@ -221,7 +227,6 @@ a {
 }
 
 .search-bg {
-  margin-top: 10px;
   width: 340px;
   height: 84px;
   background-color: #f8f7f4;
@@ -313,10 +318,11 @@ a {
 }
 
 .wrap-login-form {
+  position: absolute;
   display: none;
   right: 125px;
-  position: absolute;
   z-index: 1;
+  padding-top: 5px;
 }
 
 .login-form {
@@ -324,13 +330,12 @@ a {
   width: 277px;
   height: 213px;
   padding: 19px 20px;
-  margin-top: 5px;
   border-radius: 5px;
   box-sizing: border-box;
   background-color: #f8f7f4;
 }
 
-.login:hover .wrap-login-form {
+.login:hover + .wrap-login-form {
   display: block;
 }
 
@@ -363,7 +368,7 @@ a {
   line-height: 24px;
   font-weight: 700;
   height: 43px;
-  width: 110px;
+  width: 109px;
   text-shadow: none;
 }
 
@@ -381,12 +386,15 @@ a {
 
 .user-block .help-links {
   width: 130px;
-  margin-left: 17px;
+  margin-left: 18px;
   text-decoration: none;
   color: white;
 }
 
-.login-form a {
+.help-links a {
+  display: inline-block;
+  vertical-align: top;
+  height: 19px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -603,7 +611,7 @@ a {
 .gallery-card {
   position: relative;
   width: 267px;
-  margin-bottom: 29px;
+  margin-bottom: 37px;
 }
 
 .hit::before {
@@ -636,13 +644,22 @@ a {
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
+.gallery-card img {
+  margin-bottom: 7px;
+}
+
 .product-name {
-  margin-top: 8px;
+  margin-top: 10px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   text-align: center;
   margin-bottom: 9px;
+  border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
+}
+
+.gallery-card:hover .product-name {
+  border: none;
 }
 
 .kg {
@@ -756,6 +773,7 @@ a {
 
 .news {
   display: flex;
+  font-weight: 700;
   min-height: 220px;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -923,7 +941,7 @@ a {
   background-color: #f8f7f4;
   border-radius: 10px;
   box-shadow: 0 20px 50px 3px #595a5a;
-  z-index: 120;
+  z-index: 100;
   color: #323232;
   padding-left: 24px;
 }
@@ -1208,8 +1226,19 @@ a {
   margin-top: 23px;
 }
 
+.breadcrumbs a::after {
+  content: "»";
+  position: absolute;
+  left: 55px;
+}
+
+.breadcrumbs a:nth-child(3)::after {
+  display: none;
+}
+
 .breadcrumbs a {
-  margin-right: 17px;
+  position: relative;
+  margin-right: 8px;
   color: white;
   text-decoration: none;
   border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
@@ -1218,6 +1247,10 @@ a {
 .breadcrumbs a:hover {
   color: #ffbc9e;
   border-color: #ffbc9e;
+}
+
+.breadcrumbs a:nth-child(3) {
+  border: none;
 }
 
 h1 {
@@ -1517,6 +1550,7 @@ h1 {
 
 .gallery-card:hover::after {
   display: block;
+  height: 100%;
 }
 
 .gallery {
@@ -1537,11 +1571,12 @@ h1 {
 .gallery-card:hover .btn {
   display: inline-block;
   z-index: 2;
+  margin: 10px auto 0 auto;
 }
 
 .gallery-card:hover {
   position: relative;
-  margin-bottom: -15px;
+  margin-bottom: -25px;
   z-index: 2;
 }
 
@@ -1554,12 +1589,40 @@ h1 {
   z-index: 2;
 }
 
+.hit::before {
+  z-index: 3;
+}
+
 .pagination {
+  position: relative;
   width: 190px;
   margin-left: auto;
   text-align: center;
   margin-top: 43px;
   margin-bottom: 37px;
+}
+
+.pagination::after {
+  content: "";
+  width: 9px;
+  height: 14px;
+  top: 12px;
+  right: -5px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/paginator-arrow.png"); 
+}
+
+.pagination::before {
+  content: "";
+  width: 9px;
+  height: 14px;
+  top: 7px;
+  left: 0px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transform: rotate(-180deg);
+  background-image: url("../img/paginator-arrow.png");
 }
 
 .pagination a {
@@ -1591,3 +1654,16 @@ h1 {
   color: black;
 }
 
+@-webkit-keyframes bounce {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% { transform: translateY(-10); }
+  100% { transform: translateY(0);}
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% { transform: translateY(-10); }
+  100% { transform: translateY(0); }
+}
