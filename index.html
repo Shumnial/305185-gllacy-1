@@ -23,7 +23,7 @@
                   <div class="wrap-submenu">
                     <ul class="submenu">
                       <li><a class="new" href="#">Новинки</a></li>
-                      <li><a href="#">Сливочное</a></li>
+                      <li><a href="catalog.html">Сливочное</a></li>
                       <li><a href="#">Щербеты</a></li>
                       <li><a href="#">Фруктовый лед</a></li>
                       <li><a href="#">Мелорин</a></li>
@@ -35,11 +35,13 @@
               </ul>
             </nav>
             <div class="search-block">
-              <a class="search-button"></a>
+              <a href="#" class="search-button"></a>
               <div class="wrap-search">
-                <form action="#" method="get">
-                  <input class="search" type="search" name="search" placeholder="Что ищем?">
-                </form>
+                <div class="search-bg">
+                  <form action="#" method="get">
+                    <input class="search" type="search" name="search" placeholder="Что ищем?">
+                  </form>
+                </div>
               </div>
             </div>
             <div class="user-block">
@@ -48,10 +50,12 @@
                 <form class="login-form" action="#" method="get">
                   <input class="email" type="text" name="email" placeholder="Электронная почта">
                   <input class="password" type="text" name="password" placeholder="Пароль">
-                  <button class="btn">Войти</button>
-                  <div class="help-links">
+                  <div class="authorization-block">
+                    <button class="btn">Войти</button>
+                    <div class="help-links">
                     <a href="#">Забыли пароль?</a>
                     <a href="#">Новая регистрация</a>
+                    </div>
                   </div>
                 </form>
               </div>
@@ -137,7 +141,7 @@
               <div class="news-right">
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой  ненужной ерунды. Честно =)</p>
                 <form>
-                  <input class="news-email" type="text" name="Электронная почта" value="Электронная почта">
+                  <input class="news-email" type="text" name="Электронная почта" placeholder="Электронная почта">
                   <input class="btn" type="submit" value="Отправить">
                 </form>
               </div>
@@ -174,8 +178,8 @@
               </ul>
             </div>
             <div class="copyright">
-              <img src="img/html-logo.png" alt="Логотип HTML Academy" width="108" height="38">
-              <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
+              <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-logo.png" alt="Логотип HTML Academy" width="108" height="38"></a>
+              <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
             </div>
           </div>
         </footer>
